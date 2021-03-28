@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+<style>
+	body {
+		margin: 0;
+	}
+	/* ------------------NAVIGATION SECTION ------------------*/
+	.navigation {
+		background-color: lightblue;
+	}
+		.logo {
+		margin: 20px;
+	}
+	.menu {
+		float: right;
+		margin: 20px;
+	}
+	.menu ul{
+		list-style: none;
+		padding-left: 0px;
+		margin: 0;
+	}
+	.menu ul li{
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.logo, .menu {
+		display:
+		 inline-block;
+	}
+	.menu ul li a{
+		text-decoration: none;
+		padding: 20px 15px 20px 15px;
+	}
+	.menu ul li a:hover{
+		background-color: blue;
+		color: white;
+		transition: all 0.5s ease;
+	}
+	/* ------------------ HEADER SECTION ------------------*/
+	header {
+		background-image: url("https://i.imgur.com/ZD8Xsbw.jpg");
+		height: 500px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position-y: -160px ;
+	}
+	header p{
+		margin: 0;
+	}
+	.hero-container {
+		text-align: center;
+		padding-top: 100px;
+	}
+	.btn-work, .btn-contact {
+		text-decoration: none;
+		border-radius: 20px;
+		font-weight: bold;
+		padding: 10px 25px;
+		display: inline-block;
+	}
+	.btn-work {
+		background-color: #85af4b;
+		color: white;
+		margin: 15px 10px;
+	}
+	.btn-work:hover{
+		background-color: white;
+		color: #85af4b;
+		transition: all 0.5s ease;
+	}
+	.btn-contact{
+		background-color: white;
+		color: #85af4b;
+	}
+	.btn-contact:hover{
+		background-color: #85af4b;
+		color: white;
+		transition: all 0.5s ease;
+	}
+
+	/* ------------------ ABOUT ME SECTION ------------------*/
+
+  .about-me {
+ 	width: 100%;
+ 	padding-top: 70px;
+ 	padding-bottom: 70px;
+ 	font-family: garamond;
+ }
+ .about-me:after {
+ 	content:'';
+ 	display: block;
+ 	clear: both;
+ }
+ .about-me h2{
+ 	color: #333;
+ 	text-align: center;
+ 	text-transform: uppercase;
+ 	position: relative;
+ 	margin-bottom: 30px;
+ }
+ .about-me h2:after{
+ 	content:'';
+ 	position: absolute;
+ 	width: 80px;
+ 	height: 2px;
+ 	margin-left: -40px;
+ 	left: 50%;
+ 	bottom: 0px;
+ 	background-color: #85af4b;
+ }
+ .about-me .col-left, .about-me .col-right {
+ 	width: 50%;
+ 	float: left;
+ }
+
+ .about-me a {
+ 	background-color: #85af4b;
+ 	padding: 5px;
+ 	text-decoration: none;
+ 	color: white;
+ 	border-radius: 20px;
+ 	font-size: 17px;
+ 	display: inline-block;
+ 	border: 1px solid #85af4b;
+ }
+ .about-me a:hover{
+ 	background-color: rgba(226,226,226);
+ 	color: #85af4b;
+ }
+ .about-me .col-left img{
+ 	max-width: 90%;
+ 	padding: -20px;
+ 	 }
+
+	/* ------------------CONTACT SECTION------------------*/
+ .contact-me {
+ 	background-color: #e2e2e2;
+ }
+ .contact-me .LinkedIn, .contact-me .Facebook, .contact-me .WhatsApp {
+ 	margin: 10px;
+ 	display: inline-block;
+ 	/* float: left; */
+ }
+ 
+</style>
+</head>
+
+<body>
+	<!---------- NAVIGATION BAR SECTION---------->
+	<div class="navigation">
+		<div class="logo">JIREH.LAU</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Experience</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+	<!------------ HEADER SECTION ------------>
+	<Header>
+		<div class="hero-container">
+			<p>Hello, my name is Jireh</p>
+			<h1>Full Stack Web Developer</h1>
+				<a class="btn-work">VIEW WORK</a>
+			</button>
+				<a class="btn-contact">CONTACT ME</a>
+			</button>
+		</div>
+	</Header>
+	<!------------ ABOUT ME SECTION ------------>
+<div class="container">
+	<div class="about-me">
+		<h2>about me</h2>
+		<div class="col-left">
+			<img url="/motorCycle.jpeg" alt="jireh's photo">
+		</div>
+		<div class="col-right">
+			<h4>Jireh Lau</h4>
+			<p>Hello, thank you for checking out my page. I am an aspiring full Stack Developer. Right now I only know the basics of HTML and CSS.</p>
+			<p>Reason why I want to learn how to code is so that I can contribute more to the technical side of my Startup.</p>
+			<a href="">HIRE ME NOW</a>
+		</div>
+</div>
+	<!------------ CONTACT SECTION  ------------>
+<div class="container">
+	<div class="contact-me">
+			<h2>Contact Me</h2>
+				<ul>
+				<li> 
+					<div class="LinkedIn" id="linkedin"></div>
+					<button onclick="alert('Redirecting to...https:www.linkedin.com/in/jireh-lau-68a5b777')"><h4><a href="https://www.linkedin.com/in/jireh-lau-68a5b777">Linkedin</a></h4>
+					</button>
+				</li>
+				<li>
+				<div class="Facebook" id="facebook"></div>
+					<button onclick="alert('Redirecting to...https:www.Facebook.com')"><h4><a href="https://www.Facebook.com">Facebook</a></h4>
+					</button>
+				</li>
+				<li>
+				<div class="WhatsApp" id="WhatsApp"></div>
+					<button onclick="alert('Redirecting to...https:www.whatsapp.com/?lang=en')"><h4><a href="https://www.whatsapp.com/?lang=en">WhatsApp</a></h4>
+					</button>
+				</li>
+				</ul>
+	</div>
+</div>
+
+</body>
+</html>
